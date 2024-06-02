@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="pictureElement">
+        <h1>The picture element</h1>
+
+        <p>
+            Resize the browser window to load different images.
+        </p>
+
+        <picture>
+            <source media="(min-width:800px)" srcset="./images/lazycat.jpg" loading="lazy">
+            <source media="(min-width:500px)" srcset="./images/gingercat.jpg" loading="lazy">
+            <img src="./images/cat.jpg" alt="Cats" style="width:auto;" loading="lazy">
+        </picture>
+
+    </div>
+
+    <div class="imgElement">
+        <h1>The img element</h1>
+        
+        <p>
+            Resize the browser window and compare the difference with the Picture element.
+        </p>
+
+        <img src="./images/lazycat.jpg" alt="lazycat" loading="lazy">
+        <img src="./images/gingercat.jpg" alt="gingercat" loading="lazy">
+        <img src="./images/cat.jpg" alt="dreamycat" loading="lazy">
+    </div>
+</body>
+</html>
